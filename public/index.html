@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ações B3 2026 — PETR4 x ITUB4 x VALE3</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+  <header>
+    <h1>Comparativo de Ações B3 — YTD 2026</h1>
+    <p id="status-atualizacao"></p>
+  </header>
+
+  <section id="resumo" aria-label="Resumo por ação"></section>
+
+  <section aria-label="Preço histórico de fechamento">
+    <h2>Preço de Fechamento</h2>
+    <div class="chart-wrap"><canvas id="chart-preco"></canvas></div>
+  </section>
+
+  <section aria-label="Volume negociado">
+    <h2>Volume Negociado</h2>
+    <div class="chart-wrap"><canvas id="chart-volume"></canvas></div>
+  </section>
+
+  <section aria-label="Retorno percentual acumulado no ano">
+    <h2>Retorno Acumulado (%) — Performance Relativa</h2>
+    <div class="chart-wrap"><canvas id="chart-retorno"></canvas></div>
+  </section>
+
+  <section aria-label="Tabela de dados">
+    <h2>Tabela Resumo</h2>
+    <div class="table-wrap">
+      <table id="tabela">
+        <thead>
+          <tr>
+            <th>Ação</th>
+            <th>Abertura do ano</th>
+            <th>Máxima</th>
+            <th>Mínima</th>
+            <th>Preço atual</th>
+            <th>Variação % no ano</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

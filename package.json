@@ -1,0 +1,19 @@
+{
+  "name": "acoes-b3-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dashboard de cotacoes e performance de PETR4, ITUB4 e VALE3 no ano de 2026",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
