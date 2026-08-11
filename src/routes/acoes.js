@@ -27,7 +27,7 @@ router.get('/ytd', async (req, res) => {
         resumo: montarResumo(historico, quote),
       });
     } else {
-      avisos.push(`Falha ao buscar ${ticker}: ${r.reason?.message || 'erro desconhecido'}`);
+      avisos.push(`Falha ao buscar ${ticker}: ${r.reason?.message || 'erro desconhecido - avise a T.I'}`);
     }
   });
 
