@@ -33,7 +33,7 @@ router.get('/ytd', async (req, res) => {
 
   if (acoes.length === 0) {
     return res.status(503).json({
-      erro: 'Não foi possível obter dados da brapi.dev no momento.',
+      erro: 'Não foi possível obter dados da brapi.dev no momento. Por favor, tente mais tarde.',
       avisos,
     });
   }
