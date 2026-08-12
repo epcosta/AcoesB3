@@ -1,7 +1,7 @@
 const express = require('express');
 const { fetchQuote } = require('../brapiClient');
 const { normalizarHistorico, calcularRetornoAcumulado, montarResumo } = require('../util/calculos');
-
+// Identificacao
 const router = express.Router();
 const TICKERS = ['PETR4', 'ITUB4', 'VALE3'];
 
