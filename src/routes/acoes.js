@@ -1,7 +1,7 @@
 const express = require('express');
 const { fetchQuote } = require('../brapiClient');
 const { normalizarHistorico, calcularRetornoAcumulado, montarResumo } = require('../util/calculos');
-
+// Identificacao
 const router = express.Router();
 const TICKERS = ['PETR4', 'ITUB4', 'VALE3'];
 
@@ -37,7 +37,7 @@ router.get('/ytd', async (req, res) => {
       avisos,
     });
   }
-
+// Segunda identificação
   res.json({ acoes, avisos, atualizadoEm: new Date().toISOString() });
 });
 
