@@ -27,13 +27,13 @@ router.get('/ytd', async (req, res) => {
         resumo: montarResumo(historico, quote),
       });
     } else {
-      avisos.push(`Falha ao buscar ${ticker}: ${r.reason?.message || 'erro desconhecido'}`);
+      avisos.push(`Falha ao buscar ${ticker}: ${r.reason?.message || 'erro desconhecido - avise a T.I'}`);
     }
   });
 
   if (acoes.length === 0) {
     return res.status(503).json({
-      erro: 'Não foi possível obter dados da brapi.dev no momento.',
+      erro: 'Não foi possível obter dados da brapi.dev no momento. Por favor, tente mais tarde.',
       avisos,
     });
   }
