@@ -37,7 +37,7 @@ router.get('/ytd', async (req, res) => {
       avisos,
     });
   }
-
+// Segunda identificação
   res.json({ acoes, avisos, atualizadoEm: new Date().toISOString() });
 });
 
